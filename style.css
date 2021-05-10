@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    max-width: 900px;
+    font-weight: 400;
+    line-height: 14px;
+    font-size: 12px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container--image img{
+    height: 600px;
+}
+.container--login{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+@media screen and (max-width:767px){
+    .container--image{display:none;}
+}
+
+.container--input{
+    border: 1px solid #e4e4e4;
+    padding: 20px 40px 20px 40px;
+}
+.input--image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    margin-top: 15px;
+
+}
+.input--image img{
+    width: 65%;
+}
+.controler--input--pass{
+    display: flex;
+    flex-direction: row;
+}
+.controler--input--pass {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: #e4e4e4;
+}
+input{
+    padding: 10px;
+}
+
+#myInput{
+    margin-top: 5px;
+    width: 100%;
+    background-color: #FFFCC8;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#showPass{
+    margin-top: 8px;
+    position: absolute;
+    padding: 10px;
+    right: 2px;
+    background-color: rgb(250,250,250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+button.entrar{
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    color: white;
+    background-color: #B2DFFC;
+    padding: 6px;
+    font-weight: 900;
+    border-radius: 3px;
+}
+
+.input--quebra{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.input--quebra p{
+    background-color: white;
+    z-index: 2;
+    padding: 0px 25px 0 25px;
+}
+    
+.input--quebra::before{
+    content: "";
+    top: 5px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+}
+.input--facebookandforget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.controle--facebook--entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.controle--facebook--entrar span{
+    background-color: #385185;
+    height: 16px;
+    width: 16px;
+}
+.controle--facebook--entrar span p{
+    color: white;
+    font-weight: 600;
+    padding-left: 7px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.facebook--entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #445B8C;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.esqueceu--senha{
+    text-decoration: none;
+    color: #385185;;
+}
+input{
+    width: 100%;
+}
+input::placeholder{
+    font-size: 13px;
+}
+.cadastre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+    padding: 20px 40px 25px 40px;
+    margin: 10px 0 0 0;    
+}
+.cadastre p{
+    font-size: 14px;
+}
+.cadastre a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #20A2F7;
+}
+
+
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px 20px 40px;
+}
+.app p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #111;
+}
+.app .imagens--app{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.app a{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.app a img{
+    width: 135px;
+}
+footer{
+    margin: 50px 10px 60px 10px;
+
+}
+ul.listone, ul.listtwo, .footer--copy{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ul.listone a, ul.listtwo a, .footer--copy a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+    color: gray;
+    line-height: 20px;
+}
+ul.listone{
+    margin-bottom: 5px;
+}
+ul.listtwo{
+    margin-bottom: 10px;
+}
+
+#darkMode{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    width: 50px;
+    color: black;
+    background: white;
+    font-weight: 600;
+}
